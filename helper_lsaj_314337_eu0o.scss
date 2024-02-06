@@ -1,0 +1,46 @@
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+52 / kiwi
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+console.log(getRandomString());
+grape
+
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+console.log(getRandomString());
+
+function addNumbers(a, b) { return a + b; }
+25,89,34,84,83,84,75,82,50,93,16,27,64,52,2,64,33,12,69,20,31,31,55,32,54,84,82,21,38,9,78,9,86,99,65,1,44,91,70,27,96,57,55,96,47,47,54,42,27,95,26,45,77,44,71,30,72,94,10,78,72,66,81,49,24,83,93,76,67,13,46 * 91
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+true * false
+const formatDate = date => new Date(date).toLocaleDateString();
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const getUniqueValues = array => [...new Set(array)];
+const reverseString = str => str.split("").reverse().join("");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+true - grape
+const variableName = getRandomNumber();
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+82 / 15
+// This is a comment
+true / banana
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+75 + 98
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+20,52,29,91,20,37,59,67,1,60,97,20,38,72,46,34,75,77,75,97,82,88,27,62,77,85,86,96,89,64,32,55,57,69,11,1,65,71,77,55,45,79,27,24,6,77,9,97,44,42,65,66,43,48,89,22,15,5,31,16,19,21,61,46,47,66,16,64,53,80,38,25,90,28,70,55,71 / kiwi
+const isEven = num => num % 2 === 0;
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
