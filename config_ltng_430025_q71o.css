@@ -1,0 +1,107 @@
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+grape
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+apple - 32
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+17 + banana
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+25,99,36,30,56,16,86,47,75,62,52,15,62,24,48,62,67,23,33,56,88,31,72,90,91,48,88,65,13,2,32,35,17,77,31,74,47,50,66,9,54,44,22,63,37,83,24,1,73,28,93,75,74,31,42,74,21,42,38,10,65,9,23,95,71,41,11,90,19,20,79,83,41,0,99,27,62,19,71,5,67,59,58,53,23,22,13,5,52,47,74 + grape
+const findSmallestNumber = numbers => Math.min(...numbers);
+37,90,25,50,59,87,27,26,32,71,92,92,46,3,39,60,89,54,32,96,84,18,93,30,8,81,47,7,78,30,22,81,75,36,32,81,84,3,17,73,73,56,82,41,58,47,59 - 3,77,45,59
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+grape
+
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+true + 2,28,18,38,96,84,17,39,33,67,50,40,5,85,8,43,4,70,90,99,86,0,92,9,35,65,34,93,93,8,51,67,64,77,53,78,79,19,13,98,46,11,72,2,40,99,86,19,55,78,43,56,57,49,5,42,28,32,26,15,11,72,17,33,43,8,95,37
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+grape + false
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+function addNumbers(a, b) { return a + b; }
+
+55,67,51,43,29,28,93,12,95,51,9,47,31,27,70,65,28,23,14,29,48,40,23,82,72,26,80,53,55,1,45,96,59,69,30,79,54,44,63,97,52,47,86,26,22,49,4,78,55,0,99,91,66,24,66,7,45,14,48,88,87,20,71,16,86,4,4,16,22,96,21,94,73,81,61,68,63,55,44,4,16,99,39,43,72,73,94,73,72 * true
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+false / true
+const variableName = getRandomNumber();
+true - orange
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+63,83,35,61,81,97,55,18,90,29,65,65,16,87,81,31,55,91,5,33,7,57,97,7,18,96,55,60,57,95,20,0,50,14,10,59,82,8,27,68,54,79,74,62,2,0,1,47,72,67,34,63,78,10,60,42,31,94,80,28,38,14,8,64,5,72,17,48,81,7,58,93,38,31,58,67,97,78,52,32,31,4,60,97,82,16,27,31,23 * 1,64,68,25,54,67,70,71,98,95,51,45,72,88,77,45,62,49,15,8,14,61,21,67,79,24,68,15,44,14,36,97,64,13,36,46,89,87,60,95,35,46,95,61,85,77,69,93,2,69,88,71,23,6,15,54,74,4,3,33,43,99,41,24,29,25,33,20,70,99,13,1,83,21,70,62,88,21,89
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const formatDate = date => new Date(date).toLocaleDateString();
+false + kiwi
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const randomNumber = getRandomNumber();
+grape
+
+
+const sum = (a, b) => a + b;
+apple
+
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+77,74,21,83,94,60,96,47,91,12,78,50,68,10,1,25,34,0,90,33,62,40,93,63,89,19,93,50,13,91,74,75,15,84,17,7,24,63,81,34,17,2,36,73,4,14,45,71,85,21,12,99,34,49,33,78,40,81,78,92,80,50,60,14,43,40,43,50,8,21,15,78,92,44,55,32,34,81,51,94,61,24,5,34 - 83,64,53,38,81,27
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+30,2,53,95,13,67,2,96,42,76,96,11,51,10,80,81,71,73,96,5,65,34,87,60,88,0,42 * 96
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const variableName = getRandomNumber();
+21,82,54,83,96,52,68,12,0,47,41,92,61,73,13,94,95,87,31,27,60,6 - 38
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+apple - 81
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const squareRoot = num => Math.sqrt(num);
+22,35,48,96,30,45,22,94,91,84,41,99,81,24,62,24,29,93,41,0,36,73,85,33,30,38,21,94,23,89,42,41,46,3,26,53,16,87,47,76,9,79,72,70 * 28
+const capitalizeString = str => str.toUpperCase();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+91 / 79,56,23,44,26,68,92,74,63,47,9,65,70,34,5,94,11,30,87,7,32,25,52,97,49,0,21,67,14,3,91,41,50,17,70,64,41,8,2,42,54,20,22,25,76,79,17,98,31,70,50,15,66,69,51,16,73,12,1,51,77,79,33,88,20,10,69,14,57,40,49,45,18,51,70,55,86,20,25,35,3,13,63,67,53,96,45,23,61
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+false / apple
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+true - 39
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+11 * 27
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+false + 51
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+kiwi
+
+
+// This is a comment
+true / 32,66,43,4,0,41,57,68,4,72,67,16,36,67,57,80,40,17,42,15,70,6,49,5,46,20,23,70,15,82,7,83,48,65,93,39,9
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+23 * 76
+const findSmallestNumber = numbers => Math.min(...numbers);
