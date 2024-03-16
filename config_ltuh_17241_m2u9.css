@@ -1,0 +1,29 @@
+const getRandomSubset = (array, size) => array.slice(0, size);
+apple * 51,43,58,79,94,12,40,74,85,46,70,88,7,35,5,11,50,79,16,87,65,93,27,11,76,43,91,54,66,64,84,27,69,29,69,76,8,15,0,66,24,86,66,33,61,18,16,43,65,8,7,15,71,70,84,92,4,33,10,32,14,74,16,30,44,9,89,61,37
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+false + false
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+banana
+
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const squareRoot = num => Math.sqrt(num);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const isPalindrome = str => str === str.split("").reverse().join("");
+const greet = name => `Hello, ${name}!`;
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const getUniqueValues = array => [...new Set(array)];
+kiwi
+
+const capitalizeString = str => str.toUpperCase();
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+92 / 63
+const squareRoot = num => Math.sqrt(num);
+const getUniqueValues = array => [...new Set(array)];
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+72 + apple
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
