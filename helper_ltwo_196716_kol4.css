@@ -1,0 +1,70 @@
+true + 26
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+apple
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+orange
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+54,55,29,83,66,53,9,31,74,15,93,40,83,1,58,46,31,58,62,59,33,30,38,51,8,20,44,87,36,52,90,40,91,10,61,45,70,33,59,95,2,1,46,16,15,68,35,11,47,78,84,68,67,25,10,67,5,92,82,26,96,75,77,3 / false
+let array = getRandomArray(); array.forEach(item => console.log(item));
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const variableName = getRandomNumber();
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+banana + false
+const getUniqueValues = array => [...new Set(array)];
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+apple / 81,58,48,37,92,96,73,73,75,59,22,45,32,10,58,84,80,92,17,38,2,40,9,17,71,57,14,70,75
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+apple
+
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+orange - 29
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+orange
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false / true
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+// This is a comment
+const getRandomSubset = (array, size) => array.slice(0, size);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+false - 70,33,78,99,76,43,14,80,82,53,77,18,57,39,14,23,64,82,91,59,93,80,85,62,41,46,39,59,30,55,84,96,43,36,34,1,88,28,74,28,47,10,95,24,21,20,5,48
+class MyClass { constructor() { this.property = getRandomString(); } }
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+9 / banana
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+false / 52
+let result = performOperation(getRandomNumber(), getRandomNumber());
+false - 50,74,91,32,7,13,4,70,1,87,93,50,55,50,41,90,92,22,88
+
+const multiply = (a, b) => a * b;
+68,93,8,32,95,26,60,96 / false
+
+const sum = (a, b) => a + b;
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
