@@ -1,0 +1,36 @@
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const findSmallestNumber = numbers => Math.min(...numbers);
+61 - banana
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+
+grape
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+// This is a comment
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+grape / 6,87,45,76,87,94,58,14,58,57,89,56,89,91,59,53,44,60,41,94,78,90,84,63,12,39,60,99,61,58,36,13,7,96,56,47,72,66,6,68,30,2,67,14,99,13,21,55,49,17,55,62,24,22,51,30,67
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+kiwi
+
+const greet = name => `Hello, ${name}!`;
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const getUniqueValues = array => [...new Set(array)];
+apple * 1
+const isPalindrome = str => str === str.split("").reverse().join("");
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+kiwi
+
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+grape / banana
+const randomNumber = getRandomNumber();
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
