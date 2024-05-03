@@ -1,0 +1,68 @@
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const isEven = num => num % 2 === 0;
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+kiwi + 59,16,29,68,93,62,60,73,9,39,99,57,74,41,6,6,38,44,37,2,52,15,53,60,94,9,79,61,37,67,40,93,37,31,92,39,86,10,71,79,51,57,15,66,72,97,8,45,45,8,15,24,34,70,92,76,9,9,34,58,58,78,24,14,88,91,17,16,13,65,98,75,25,91,43,73,0,96,79,2,33,38,16,95,37,95,40,3,23,94,17,65,91,10,60,72,44,59
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const reverseString = str => str.split("").reverse().join("");
+38,91,10,80,27,96,92,29,91,14,80,93,0,53,1,53,1,83,76,95,22,75,18,35,55,88,27,51,52,41,51,42,39,44,12,98,34,84,63,14,22,93,1,42,53,32,36,46,6,40,33,83,65,95,81,18,51,45,72,86,77,77,6,17,24,28,72,22,3,89,96,70,22,25,90,55,32,56,81,16,92,37,70,88,37,93,20,51,47,92,34,78,50,75,54,52 + 86,53,47,32,77,20,23,38,41,88,42,0,96,58,37,52,24,33,4,92,99,34,64,44,94,72,11,37,15,94,71,3,72,35,36,43,18,32,92,3,8,52,43,26,18,12,10,81,63,9,26,13,21,18,77,78,79,26,7,80,97,70,33,14,75,21,92,91,22,11,53,64,39,29,97,19,69,36,13,54,75,21,83,64
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const greet = name => `Hello, ${name}!`;
+
+orange / apple
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const variableName = getRandomNumber();
+banana
+
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+50 - 65,72,90,67,74,72,81,62,49,8,40,26,85,39,25,78,53,14,52,72,63,57,89,60,31,68,27,44,86,54,92,55,44,36,54,25,16,52,73,30,10,25,53,95,24,67,2,32,13,78,15,13,7,19,67,19,75,85,82,93,79,53,18,96,42,25,98,60,81,18,80,19,33,58,73,37,96,28,23,38
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const reverseWords = str => str.split(" ").reverse().join(" ");
+78,87,65,20 + apple
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+const greet = name => `Hello, ${name}!`;
+
+grape
+
+console.log(getRandomString());
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const getUniqueValues = array => [...new Set(array)];
+kiwi - false
+// This is a comment
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+apple
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+orange - true
+const findLargestNumber = numbers => Math.max(...numbers);
+
+37 + grape
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
